@@ -26,8 +26,9 @@ html{
 
 body {
     background-color: rgb(245, 242, 242);
-    width: 75%;
+    /* width: 75%; */
     margin: auto;
+    max-height: 100%;
     
 }
 
@@ -35,29 +36,48 @@ body {
 div {
     background: white;
     /* border: 1px solid black; */
-    align-items: center;
+    /* align-items: center; */
     margin: 0;
     margin-top: 3px;
     color: black;
     box-sizing: border-box;
-    padding: 8px;
+    /* padding: 8px; */
+
 }
 
 header :hover {
     color: rgb(255, 136, 0);
 }
 
+
 header {
+    background: white;
     display: flex;
     flex-direction: row-reverse ;
     font-size: 20px;
     list-style: none;
     color: black;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 75%;
     margin: auto;
-    z-index: 25;
+    text-align: center;
+    z-index: 2;
+    padding: 8px;
+    padding-bottom: 0px;
+}
+
+div.li {
+    background: black;
+    color: black;
+}
+
+
+.li {
+    text-align: center;
+    justify-content: center;
+    padding: 8px;
+
 }
 
 .search {
@@ -70,12 +90,12 @@ header {
     padding-top: 3px;
     padding-bottom: 3px;
     margin: auto;
-    margin-right: 18%;
     font-size: 14px;
+    position: sticky;
 }
 
 .topbox {
-    width: 75%;
+    width: 100%;
     height: 68px;
     background: white;
     margin: auto;
@@ -84,32 +104,110 @@ header {
 }
 
 .logo img{
-   width: 100px;
-   margin: auto;
-   border: none;
-
+    width: 100px;
+    margin: auto;
+    /* margin-left: 80%; */
+    /* border: none; */
+    margin-top: 0;
+    padding: 8px;
 }
 
-
-
-
-/* .container{
-    background: white;
-    border-radius: 3px;
-    width: max;
-    height: 68px;
-    top: auto;
-    position: fixed;
-    margin-top: 0;
-} */
+section {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    max-width: 100%;
+    max-height: 100%;
+}
 
 .card {
     background: rgb(255, 255, 255);
     width: 500px;
-    height: 500px;
+    height: 800px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 30px;
     border-radius: 3px;
-    position: sticky;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    padding-bottom: 80px;
+}
+
+.card2 {
+    background: rgb(255, 255, 255);
+    width: 500px;
+    height: 800px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 3px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    padding-bottom: 80px;
+}
+
+
+
+.card-header {
+    flex-direction: row;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    margin: left;
+    padding: 8px;
+}
+
+.card-header2 {
+    flex-direction: row;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    margin: left;
+    padding: 8px;
+}
+
+li {
+    text-align: center;
+    justify-content: center;
+    margin: left;
+    margin-top: 10px;
+    margin-left: 0;
+    padding-left: 0px;
+}
+
+.time{
+    text-align: right;
+}
+
+.card-pic {
+    display: flex;
+    flex-direction: column;
+}
+
+div.pic{
+    padding: 0 0 0 0;
+}
+
+div.card-pic {
+    padding: 0;
+}
+
+div.card-header {
+    border-radius: 50%;
+    border-color: 3px solid orange;
+}
+
+.time{
+    margin: left;
+    text-align: left;
+    font-size: small;
+    font-weight: bold;
+    color: grey;
 }
 
